@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "cardo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: whitesmoke;
+    background-color: #161616;
+  }
+  
+  a {
+    color: #4fbfa8;
+    text-decoration: none;
+  }
+  
+  a:hover, a:focus {
+    color: #348e7b;
+    text-decoration: underline;
+  }
+  
+h1, h2, h3, .h1, .h2, .h3 {
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit;
+  }
+h1,.h1 {
+    font-size: 3rem;
+  }
+h2, .h2 {
+    font-size: 2.3rem;
+  }
+h3, .h3 {
+    font-size: 1.9rem;
+  }
+
+
+
+/*portada*/
+section {
+    position: relative;
+    padding: 6rem 0;
+  }
+.tat {
+    background: url(img/infer.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.bg-cover {
+    background-size: cover;
+    .bg-center {
+        background-position: center;
+      }
+  }
+.main-logo{
+    transition: all 2s ease;
+}
+.main-logo:hover{
+    transform: rotate(180deg);
+    
+}
+
+/*redes*/
+.contact-item ul li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+.contact-item ul li a {
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+    background-color: #4e4e4e;
+    text-decoration: none;
+    border-radius: 50%;
+    display: block;
+}
+.contact-item ul li a i {
+    cursor: pointer; 
+    color: #ffffff;    
+    line-height: 50px;
+    font-size: 22px;
+    transition: all 0.4s; 
+}
+.contact-item a:hover i {
+    color: #dd69ad;
+    font-size: 28px;
+    
+}
+/*carousel*/
+.carousel{
+    padding-top: 3rem;
+    img{
+        width: auto;
+    }
+}
+.preturi{
+    img{
+        width: 400px;
+        height: 600px;
+        opacity: .8;
+    }
+    img:hover{
+        opacity: 1;
+    }
+}
+
+footer{
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+}
+
+@import "instabar";
